@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Body CSS */
+
+body{
+background-color: #B7CAA8;
+font-family: 'Maven Pro', sans-serif;
+}
+
+h2{
+    line-height: 10px;
+}
+
+h3{
+    margin: 10px;
+}
+
+p{
+    margin: 10px;
+}
+
+/* Container */
+
+.container{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+        "nav nav nav logo"
+        "indl indl indl indl"
+        "spg1 spg1 spg1 spg1"
+        "spg2 spg2 spg2 spg2"
+        "spg3 spg3 spg3 spg3"
+        "spg4 spg4 spg4 spg4"
+        "spg5 spg5 spg5 spg5"
+        "spg6 spg6 spg6 spg6"
+        "spg7 spg7 spg7 spg7"
+        "spg8 spg8 spg8 spg8"
+        "spg9 spg9 spg9 spg9"
+        "knap knap knap knap"
+        "footer footer footer footer";
+
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr fr 2fr 2fr;
+}
+
+/* Logo */
+
+.logo{
+    grid-area: logo;
+    border-radius: 15px;
+    text-align: right;
+    background-color: #B7CAA8;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Navbar */
+
+.nav{
+    grid-area: nav;
+    background: #B7CAA8;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Indledning */
+
+.indl{
+    grid-area: indl;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.indl p{
+    line-height: 23px;
+    margin: 0px;
+}
+
+.indl > div{
+    grid-column: 2/3;
+    background: #B7CAA8;
+    color: #ffffff;
+}
+
+/* Generelt spg */
+
+.spg-gen {
+    padding: 50px;
+    line-height: 2.5;
+    font-size: larger;
+    padding-left: 100px;
+    grid-column: 2/3;
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgba(118, 143, 163, 0.336);
+}
+
+/* Spørgsmål 1 */
+
+.spg1{
+    grid-area: spg1;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #000000;
+}
+
+/* Spørgsmål 2 */
+
+.spg2{
+    grid-area: spg2;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #000000;
+}
+
+#alder {
+    background-color:#B7CAA8;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    font-family: 'Maven Pro', sans-serif;
+    
+}
+
+/* Spørgsmål 3 */
+
+.spg3{
+    grid-area: spg3;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #2e2d2d;
+}
+
+#andetjob {
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    border: solid 1px rgb(0, 0, 0);
+}
+/* Spørgsmål 4 */
+
+.spg4{
+    grid-area: spg4;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #2e2d2d;
+}
+
+/* Spørgsmål 5 */
+
+.spg5{
+    grid-area: spg5;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #2e2d2d;
+}
+
+/* Spørgsmål 6 */
+
+.spg6{
+    grid-area: spg6;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #2e2d2d;
+}
+
+/* Spørgsmål 7*/
+
+.spg7{
+    grid-area: spg7;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #2e2d2d;
+}
+
+/* Spørgsmål 8 */
+
+.spg8{
+    grid-area: spg8;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #2e2d2d;
+}
+
+/* Spørgsmål 9 */
+
+.spg9{
+    grid-area: spg9;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    color: #2e2d2d;
+}
+
+#spg9tekst {
+    border-radius: 15px;
+    border: solid 1px rgb(0, 0, 0);
+    font-family: 'Maven Pro', sans-serif;
+}
+
+/* Send Knap */
+
+.knap{
+    grid-area: knap;
+    text-align: center;
+    margin: 30px;
+}
+
+.knap button{
+    color: #2e2d2d;
+    background: #fdfdfd;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+.knap button:hover{
+    background: cornsilk;
+}
+
+footer{
+    grid-area: footer;
+    background: rgba(255, 255, 255, 0.74);
+    color: #2e2d2d;
+}
+
+.textfooter{
+    text-align: left;
+    margin: 30px 10px 30px 50px;
+}
+
+.copyright{
+    text-align: center;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+/* 
+Responsivt
+*/
+
+/* Tablet */
+@media screen and (max-width: 820px){
+    .container{
+        grid-template-areas: 
+        "nav nav logo"
+        "indl indl indl"
+        "spg1 spg1 spg1"
+        "spg2 spg2 spg2"
+        "spg3 spg3 spg3"
+        "spg4 spg4 spg4"
+        "spg5 spg5 spg5"
+        "spg6 spg6 spg6"
+        "spg7 spg7 spg7"
+        "spg8 spg8 spg8"
+        "spg9 spg9 spg9"
+        "knap knap knap"
+        "footer footer footer";
+    }
+}
+
+/* Telefon */
+@media screen and (max-width: 546px){
+    .container{
+        grid-template-areas: 
+        "nav"
+        "logo"
+        "indl"
+        "spg1"
+        "spg2"
+        "spg3"
+        "spg4"
+        "spg5"
+        "spg6"
+        "spg7"
+        "spg8"
+        "spg9"
+        "knap"
+        "footer";
+
+    grid-template-rows: 2fr 2fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 2fr 2fr;
+    }
+
+    .indl>div{
+        grid-column: 1/5;
+    }
+
+    .spg1>div{
+        grid-column: 1/5;
+    }
+
+    .spg2>div{
+        grid-column: 1/5;
+    }
+
+    .spg3>div{
+        grid-column: 1/5;
+    }
+
+    .spg4>div{
+        grid-column: 1/5;
+    }
+
+    .spg5>div{
+        grid-column: 1/5;
+    }
+
+    .spg6>div{
+        grid-column: 1/5;
+    }
+
+    .indl{
+        padding: 30px;
+    }
+}

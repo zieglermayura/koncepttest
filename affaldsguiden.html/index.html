@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("RZulrk_SwNVD9SSvu");
+    })();
+    </script>
+    
+    <title>Affaldsguiden - Koncepttest</title>
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<!-- Body -->
+<body>
+
+    <form method="POST">
+    <div class="container">
+
+        <!-- Navbar -->
+        <div class="logo"><img src="img/logo.png" alt="dat-logo" width="100px"></div>
+        <div class="nav">
+        </div>
+        <!-- Indledning -->
+        <div class="indl">
+            <div>
+            <h2>Affaldsguide - Koncepttest</h2><br><br>
+            <p>Hej - Vi er igang med at skrive eksamen og har fået til opgave at skulle skabe opmærksomhed om en læringsoplevelse, om et selvvalgt emne. Her har vi valgt at arbejde med emnet Affaldssortering. For at kunne udvikle vores idé har vi brug for din hjælp. Alt du skal gøre er blot at svare på vores spørgeskema som tager 2 minutter.  
+                <br><br> Oplysningerne vil blive brugt i forbindelse med MUL-A 2 semester eksamen, flow 5 på CPHbusiness og vil indgå i vores uddannelsesforløb. Oplysningerne vil endvidere kunne anvendes til statistik. 
+                <br><br>
+                Dit svar vil være anonymt. 
+                
+            </p>
+            </div>
+        </div>  
+        
+        <!-- Spg1 -->
+        <div class="spg1">
+            <div class="spg-gen">
+                <h3>Spørgsmål 1</h3>
+                <label for="koen">Hvad er dit køn?</label>
+
+                <br>
+
+                    <input type="radio" id="mand" name="koen" value="Mand">
+                    <label for="mand">Mand</label>
+
+                    <br>
+                    
+                    <input type="radio" id="kvinde" name="koen" value="Kvinde">
+                    <label for="kvinde">Kvinde</label>
+
+                    <br>
+                    
+                    <input type="radio" id="andet" name="koen" value="Andet">
+                    <label for="andet">Andet</label>
+ 
+            </div> 
+        </div>
+
+        <!-- Spg2 -->
+        <div class="spg2">
+            <div  class="spg-gen">
+                <h3>Spørgsmål 2</h3>
+                <label for="alder">Hvor gammel er du?</label>
+
+                <br>
+
+                <form>
+                    <select id="alder" name="alder">
+                      <option value="" disabled selected>Vælg alder</option>
+                      <option value="15-24">15-24</option>
+                      <option value="25-34">25-34</option>
+                      <option value="35-44">35-44</option>
+                      <option value="45-54">45-54</option>
+                      <option value="55-64">55-64</option>
+                      <option value="65+">65+</option>
+                    </select>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- Spg3 -->
+        <div class="spg3">
+            <div  class="spg-gen">
+                <h3>Spørgsmål 3</h3>
+                <label for="job">Hvad er din beskæftigelse?</label>
+
+                <br>
+               
+                    <input type="radio" id="studerende" name="job" value="Studerende">
+                    <label for="studerende">Studerende</label>
+
+                    <br>
+                    
+                    <input type="radio" id="fuldtid" name="job" value="Fuldtid">
+                    <label for="fuldtid">Fuldtidsansat</label>
+
+                    <br>
+                    
+                    <input type="radio" id="sabbat" name="job" value="Sabbatår">
+                    <label for="sabbat">Sabbat år</label>
+
+                    <br>
+                    
+                    <input type="radio" id="andetjob" name="job" value="Andet">
+                    <label for="andet">Andet</label>
+                 
+            </div>
+        </div>
+
+        <!-- Spg4 -->
+        <div class="spg4">
+            <div  class="spg-gen">
+               <h3>Spørgsmål 4</h3>
+               <label for="spg4">Affaldssortere du?</label>
+
+               <br>
+
+                    <input type="radio" id="spg4ja" name="spg4" value="Ja">
+                    <label for="spg4ja">Ja</label>
+
+                    <br>
+                    
+                    <input type="radio" id="spg4nej" name="spg4" value="Nej">
+                    <label for="spg4nej">Nej</label>
+
+            </div>
+        </div>
+
+        <!-- Spg5 -->
+        <div class="spg5">
+            <div  class="spg-gen">
+                <h3>Spørgsmål 5</h3>
+               <label for="spg5">Kunne du have brug for mere hjælp/vejledning til at affaldssortere?</label>
+
+               <br>
+               
+                    <input type="radio" id="spg5ja" name="spg5" value="Ja">
+                    <label for="spg5ja">Ja, jeg er oftes i tvivl om hvor mit affald skal smides ud.</label>
+
+                    <br>
+
+                    <input type="radio" id="spg5nej" name="spg5" value="Nej">
+                    <label for="spg5nej">Nej tak, jeg har styr på hvordan jeg sortere mit affald.</label>
+
+            </div>
+        </div>
+
+        <!-- Spg6 -->
+        <div class="spg6">
+            <div  class="spg-gen">
+                <h3>Spørgsmål 6</h3>
+               <label for="spg6">Hvis vi designede en app i samarbejde med miljøstyrelsen og Danmarks kommuner, hvor du ville kunne få hjælp til at affaldssortere i din hverdag, ville det så anvende den?</label>
+
+               <br>
+
+                    <input type="radio" id="spg6ja" name="spg6" value="Ja">
+                    <label for="spg6ja">Ja</label>
+
+                    <br>
+                    
+                    <input type="radio" id="spg6nej" name="spg6" value="Nej">
+                    <label for="spg6nej">Nej</label>
+                
+            </div>
+        </div>
+
+        <!-- Spg7 -->
+        <div class="spg7">
+            <div  class="spg-gen">
+               <h3>Spørgsmål 7</h3>
+               <label for="spg7">Kunne du have lyst til at downloade denne app hvis du så den i App-store/Google-store? </label> <br>
+                <img src="img/appstore.png" alt="appstore" width="300px">
+               <br>
+
+              
+                    <input type="radio" id="spg7ja" name="spg7" value="Ja">
+                    <label for="spg7ja">Ja</label>
+
+                    <br>
+                    
+                    <input type="radio" id="spg7nej" name="spg7" value="Nej">
+                    <label for="spg7nej">Nej</label>
+
+                
+            </div>
+        </div>
+
+        <!-- Spg8 -->
+        <div class="spg8">
+            <div  class="spg-gen">
+                 <h3>Spørgsmål 8</h3>
+               <label for="spg8">Vores app kommer til at have en funktion hvor du scanner affaldet du skal til og smide ud, ville du foretrække appen scannede stregkoden eller selve objektet?</label> <br>
+            <img src="img/scannefunktion.png" alt="scannefunktion" width="300px">
+
+               <br>
+                
+                    <input type="radio" id="spg8ja" name="spg8" value="Ja">
+                    <label for="spg8ja">Stregkode</label>
+
+                    <br>
+                    
+                    <input type="radio" id="spg8nej" name="spg8" value="Nej">
+                    <label for="spg8nej">Objektet</label>
+                 
+            </div>
+        </div>
+
+        <!-- Spg9 -->
+        <div class="spg9">
+            <div  class="spg-gen">
+                <h3>Spørgsmål 9</h3>
+               <label for="spg9">Har du spørgsmål, forslag til design, funktioner mv. skal du være velkommen til at skrive dem her, det vil vi sætte stor pris på. </label><br>
+
+                    <label for="spg9tekst"></label>
+                    <textarea id="spg9tekst" name="spg9" rows="10" cols="80"></textarea>   
+            </div>
+        </div>
+
+        <!-- Send knap -->
+        <div class="knap">
+            <button onclick="indsendSvar()" type="reset">Indsend svar</button>
+        </div>
+       
+
+        <!-- Footer -->
+        <footer>
+            <div class="textfooter">
+                <h4>Affaldsguiden</h4><br>
+                    <ul>Mia og Christina</ul>
+                    <ul>Mul A Hold</ul>
+                    <ul>2. Semester eksamen flow 5 </ul>
+            </div>
+
+            <div class="copyright">
+                <p> © Copyright Affaldsguiden </p>
+            </div>
+        </footer>
+        </div>
+        </form>
+</body>
+</html>
