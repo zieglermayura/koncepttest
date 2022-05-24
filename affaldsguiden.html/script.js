@@ -18,27 +18,27 @@ function indsendSvar(){
 
     // Spg4
     const spg4 = document.querySelector('input[name="spg4"]:checked').value;
-    console.log("Ved du hvad Datatilsynet er?: " + spg4);
+    console.log("Affaldssortere du?: " + spg4);
 
     // Spg5
     const spg5 = document.querySelector('input[name="spg5"]:checked').value;
-    console.log("Ved du hvad GDPR er?: " + spg5);
+    console.log("Kunne du have brug for mere hjælp/vejledning til at affaldssortere?: " + spg5);
 
     // Spg6
     const spg6 = document.querySelector('input[name="spg6"]:checked').value;
-    console.log("Har du været udsat for at dine oplysninger er blevet videregivet mod din vilje?: " + spg6);
+    console.log("Hvis vi designede en app i samarbejde med miljøstyrelsen og Danmarks kommuner, hvor du ville kunne få hjælp til at affaldssortere i din hverdag, ville det så anvende den?: " + spg6);
 
     // Spg7
     const spg7 = document.querySelector('input[name="spg7"]:checked').value;
-    console.log("Har du fået delt et billede offentligt mod din vilje?: " + spg7);
+    console.log("Kunne du have lyst til at downloade denne app hvis du så den i App-store/Google-store?: " + spg7);
 
     // Spg8
     const spg8 = document.querySelector('input[name="spg8"]:checked').value;
-    console.log("Synes du at der bliver sat nok fokus på GDPR reglerne?:  " + spg8);
+    console.log("Vores app kommer til at have en funktion hvor du scanner affaldet du skal til og smide ud, ville du foretrække appen scannede stregkoden eller selve objektet?:  " + spg8);
 
     // Spg9
     const spg9 = document.getElementById("spg9tekst").value;
-    console.log("Hvad kunne der gøres for at danskerne bliver mere opmærksomme på GDPR?: " + spg9)
+    console.log("Har du spørgsmål, forslag til design, funktioner mv. skal du være velkommen til at skrive dem her, det vil vi sætte stor pris på.: " + spg9)
 
     // Lav objekt med alle svar
     const svarFraSkema = {
